@@ -1,4 +1,4 @@
-# Side-stacker backend
+# Side-stacker frontend
 
 This is a React + SocketIO web app that provide the frontend for a side-stack game.
 
