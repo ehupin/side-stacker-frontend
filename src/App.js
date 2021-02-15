@@ -1,7 +1,9 @@
 import React from 'react';
 import classNames from "classnames";
-import './App.css';
 const io = require("socket.io-client")
+
+import './App.css';
+const config = require('./config');
 
 // define game statuses and related messages
 const GameStatuses = Object.freeze({
@@ -32,7 +34,7 @@ const GameStatuses = Object.freeze({
 class App extends React.Component {
   constructor(props) {
     super(props);
-    const socket = io("https://side-stacker.herokuapp.com/")
+    const socket = io(config.serverUrl)
 
     this.state = {
       gameMatrix: [],
