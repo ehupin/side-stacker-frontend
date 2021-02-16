@@ -81,3 +81,19 @@
 .player1 {
   background: #ffa821;
 }
+
+.joinButton{
+  background: #404040;
+  cursor: pointer;
+  color: #e7e7e7;
+  font-weight: bold;
+  padding: 15px;
+  margin: 10px;
+  border: none;
+  outline: none;
+  border-radius: 5px;
+}
+
+.joinButton:hover{
+  background: #565656;
+}
