@@ -162,25 +162,6 @@ class StartupHeader extends React.Component {
   }
 }
 
-class GameHeader extends React.Component {
-  render() {
-    return (
-      <div>
-        <div id="details">
-          <div>Game ID: {this.props.parentState.gameId}</div>
-        </div>
-        <div id="playerHeader">
-          <PlayerInfo playerId={0} currentPlayer={this.props.parentState.playerId}/>
-          <PlayerInfo playerId={1} currentPlayer={this.props.parentState.playerId}/>
-        </div>
-        <div id="info">
-          {this.props.statusMessage}
-        </div>
-      </div>
-    )
-  }
-}
-
 class GameBoard extends React.Component {
   addButtonClicked(rowIndex, side) {
     // notify server for player move (if player is allowed to play)
